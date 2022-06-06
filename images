@@ -1,0 +1,13 @@
+Create a Dockerfile
+#vi Dockerfile
+create an image out of Dockerfile and start using the docker container
+#docker build -t ubuntu:1.1 .
+Verify the images are created using below command
+#docker images
+#docker ps -a -- will lists all images
+Create a container using the below command.
+#docker run -i -t imagename:1.2(or)latest  /bin/bash -- tag/version of the image may be latest or any other required version.
+Change the tag of the existing image using below command.
+#docker tag ubuntu:latest vamsi1670/ubuntu:latest
+Push the image using below command into repository.
+#docker push vamsi1670/ubuntu:latest
